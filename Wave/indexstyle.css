@@ -1,0 +1,279 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+body
+{
+    font-family: sans-serif;
+    
+}
+header
+{
+    position: absolute;
+    max-width: 100%;
+    height:100px;
+    z-index: 10;
+    background-color: black;
+}
+
+header .container
+{
+    position: fixed;
+    height: 90px;
+    display: grid;
+    justify-content: space-between;
+    width: 100vw;
+    max-width: 100%;
+    background-color: black;
+    opacity: 95%;
+    border-bottom: 2px;
+    border-color: rgb(182, 182, 182);
+}
+
+header .logo
+{
+    height: 40px;
+    min-height: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.navigation
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: grid;
+    justify-content: center;
+}
+
+
+nav li
+{
+    list-style-type: none;
+    margin-top: 40px;
+    
+}
+
+nav a
+{
+    font-size: 0.875em;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: rgb(182, 182, 182);
+    margin: 10px 30px;
+    letter-spacing: 4px;
+}
+
+.connect
+{
+    background-color: black;
+    border: none;
+    color: whitesmoke;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    transition: .8s;
+    cursor: pointer;   
+    /* position: right;   why you no mooooove*/ 
+}
+
+.connect 
+{
+    background-color: black;
+    color: white;
+    border: 1.5px solid white;
+}
+
+.connect:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.intro
+{
+    max-height: 100vh;
+    max-width: 100%;
+}
+
+.intro video
+{
+    
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro h1
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: white;
+}
+
+.content-skills
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    height: 500px;
+    width: 700px;
+    max-width: 760px;
+    word-wrap: wrap;
+}
+
+.content-skills h2
+{
+   margin-left: 250px;
+}
+
+.content-skills p
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.content-skills button
+{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    margin-left: 250px;
+    margin-top: 30px;
+    padding: 20px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(182, 182, 182);
+    
+}
+.about
+{
+    background-color: black;
+    margin-top: 20px;
+    display: flex;
+    max-width: 100%;
+    padding: 30px;
+    grid-column-gap: 150px;
+    grid-row-gap: 100px;
+    
+}
+.skills-list
+{
+    margin-top: 100px;
+  
+    width: 500px;
+    max-width: 100%;
+    min-width: 200px;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    margin-left: 700px;
+}
+
+.skills-list h2
+{
+    margin-left: 80px;
+    
+}
+
+.skills-list ul
+{
+    
+    margin-left: 10px;
+    padding:15px;
+    list-style: none;
+    columns: 100px 2;
+}
+
+.skills-list li
+{
+    padding: 10px;
+}
+
+.skills-list h5
+{
+    margin-left:-30px;
+}
+
+.skills-list img
+{
+    height: 30px;
+    padding: 5px;
+}
+
+
+.projects-txt
+{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center; 
+    font-size:40px;
+    letter-spacing: 15px;
+    padding-bottom: 20px;
+}
+.projects
+{
+    display: flex;
+    justify-content: center; 
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.projects ul
+{
+    list-style: none;
+}
+
+.projects img
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 30px;
+    width: 700px;
+}
+
+h1
+{
+   text-align: center;
+   letter-spacing: 15px;
+}
+
+
+.contact
+{   position: relative;
+    padding: 40px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+.contact p
+{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+
+
