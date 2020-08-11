@@ -198,6 +198,8 @@ nav a
     padding-top: 100px;
     display: flex;
     justify-content: center; 
+    width:800px;
+    max-width: 100%;
     font-size:40px;
     letter-spacing: 15px;
     padding-bottom: 20px;
@@ -206,6 +208,8 @@ nav a
 {
     display: flex;
     justify-content: center; 
+    width:800px;
+    max-width: 100%;
     padding-top: 20px;
     padding-bottom: 50px;
 }
