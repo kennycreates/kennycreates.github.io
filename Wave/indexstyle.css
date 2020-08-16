@@ -2,175 +2,164 @@
 {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
 }
+
 html{
     scroll-behavior: smooth;
-    overflow-y: scroll;
-}
-body
-{
-    font-family: sans-serif;
+    background-color: #197278;
     
 }
+
 header
 {
-    position: absolute;
-    max-width: 100%;
-    height:100px;
-    z-index: 10;
-    background-color: black;
+    width:100%;
+    height:100vh;
 }
 
-header .container
+.container
 {
-    position: fixed;
-    height: 90px;
-    display: grid;
+    max-width: 120rem;
+    width:90%;
+    margin: auto 70px;
+    position:fixed;
+    align-items: center;
+}
+
+nav
+{
+    padding-top:1rem;
+    display: flex;
     justify-content: space-between;
-    width: 100vw;
-    max-width: 100%;
-    background-color: black;
-    opacity: 95%;
-    border-bottom: 2px;
-    border-color: rgb(182, 182, 182);
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #EDDDD4;
+    background-color: #197278;
 }
 
-header .logo
+.logo
 {
-    height: 40px;
-    min-height: 30px;
-    margin-left: 20px;
-    margin-top: 10px;
+    display: flex;
+    width:50px;
+    grid-column:1/2;
+    margin-left: 40px;   
+    filter: #EDDDD4(100%);
+    cursor: pointer;
 }
 
-.navigation
+nav ul
 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    display: grid;
-    justify-content: center;
+    display: flex;
+
 }
 
-
-nav li
+nav ul li
 {
     list-style-type: none;
-    margin-top: 40px;
-    
+    /* padding:20px; */
+    /* margin: 0 2rem; */
+    position: relative;
+    letter-spacing:2px;
+    color: #EDDDD4;
 }
 
 nav a
 {
-    font-size: 0.875em;
-    
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: rgb(182, 182, 182);
-    margin: 10px 30px;
-    letter-spacing: 4px;
+    color: #EDDDD4;
+    padding:1rem 0;
+    margin: 0 3rem;
+    position: relative;
+    letter-spacing:2px;
 }
 
-.connect
+.hero
 {
-    background-color: black;
-    border: none;
-    color: whitesmoke;
-    padding: 10px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 4px 2px;
-    transition: .8s;
-    cursor: pointer;   
-    position: right;   
+    max-width: 1240px;
+    margin:auto;
 }
 
-.connect 
+.hero img
 {
-    background-color: black;
-    color: white;
-    border: 1.5px solid white;
+   padding-top: 125px; 
+   width:100%;
+   height:100%;
+   margin:auto;
 }
 
-.connect:hover
-{
-    background-color: white;
-    color: black;
-}
-
-.intro
-{
-    max-height: 100vh;
-    max-width: 100%;
-    background-color: black;
-}
-
-.intro video
-{
-    
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.intro h1
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    color: white;
-}
-
-
-.content-skills button
-{
-    display: flex;
-    font-size: 1rem;
-    margin-left: 120px;
-    margin-top: 30px;
-    padding: 20px 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: rgb(182, 182, 182);
-    
-}
 .about
 {
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     max-height: 100%;
     max-width: 100%;
     padding: 30px;
-   
+    font-size: 28px;  
 }
 
-.skills
+.about h2
+{
+    text-align: center;
+    padding-bottom:18px;
+    color:#6e2b22;
+    letter-spacing: 10px;
+}
+
+.about p
+{
+    font-size: 24px;
+    color:#6e2b22;
+}
+
+.btn-secret
 {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    align-content: center;
+    margin-top: 35px;
+    
+}
+
+.btn-secret h3
+{
+    background-color: #197278;
+    border: none;
+    color:#EDDDD4;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.618fr;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    outline:none;
+}
+
+::after
+{
+    border: none;
 }
 .skills-list
 {
-    margin-top: 100px;
+    padding-top: 100px;
     width: 500px;
-    max-width: 100%;
-    min-width: 200px;
-    align-content: center;
-   
+    max-width: 1240px;
+    margin: auto;
+  
 }
+
+.skills-list h2
+{
+   text-align: center;
+   color:#6e2b22;
+}
+
 
 .skills-list ul
 {
-    
-    margin-left: 10px;
+    margin-left: 60px;
     padding:15px;
     list-style: none;
     columns: 100px 2;
@@ -179,6 +168,7 @@ nav a
 .skills-list li
 {
     padding: 10px;
+    color:#6e2b22;
 }
 
 .skills-list h5
@@ -195,21 +185,22 @@ nav a
 
 .projects-txt
 {
-    padding-top: 100px;
+    padding-top: 150px;
     display: flex;
     justify-content: center; 
-    width:800px;
-    max-width: 100%;
+    max-width: 1240px;
+    margin: auto;
     font-size:40px;
     letter-spacing: 15px;
     padding-bottom: 20px;
+    color:#6e2b22;
 }
 .projects
 {
     display: flex;
     justify-content: center; 
-    width:800px;
-    max-width: 100%;
+    /* max-width: 1240px;
+    margin: auto; */
     padding-top: 20px;
     padding-bottom: 50px;
 }
@@ -217,15 +208,18 @@ nav a
 .projects ul
 {
     list-style: none;
+    max-width: 1240px;
+    margin: auto;
 }
 
 .projects img
 {
-    display: flex;
-    justify-content: center;
+    max-width: 1240px;
+    margin: auto;
     padding: 10px;
     margin-top: 30px;
-    width: 700px;
+    max-width: 1240px;
+    margin: auto;
 }
 
 h1
@@ -237,27 +231,32 @@ h1
 
 .contact
 { 
+    display: grid;
+    grid-template-rows: 20%, 1fr, 20%;
     height: 500px;
     max-height: 500px;
+    max-width: 1440px;
+    margin: auto;
     position: relative;
     padding: 40px;
     scroll-behavior: smooth;
     overflow-y: scroll;
+    color:#6e2b22;
 }
 
 .contact p
 {
-    display: flex;
-    justify-content: center;
+   
     padding: 15px;
     letter-spacing: 10px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .buttons
 {
-    display: flex;
-    justify-content: center;
+    max-width: 1240px;
+    margin: auto;
     margin-top: 60px;
     top:50%;
     transform: translateY(-50%);
@@ -270,11 +269,11 @@ h1
     display: inline-block;
     width:90px;
     height: 90px;
-    background: whitesmoke;
+    background: #EDDDD4;
     margin: 15px;
     border-radius: 30%;
-    box-shadow: 0 5px 15px -5px #00000070;
-    color: #a00303;
+    box-shadow: 0 10px 15px -2px #283D3B;
+    color: #C44536;
     overflow: hidden;
     position: relative;
 }
@@ -298,7 +297,7 @@ h1
     position: absolute;
     width: 120%;
     height: 120%;
-    background: #a00303;
+    background: #C44536;
     transform: rotate(45deg);
     left: -110%;
     top: 90%;
@@ -326,137 +325,85 @@ left:-10%;
 
 }
 
-.container2
+.email
 {
-    width:80%;
-    padding:60px;
-    padding-left: 375px;
-
-}   
-
-.container2 h2
-{
-    width:100%;
-    color:#a00303;
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.container2.row100
-{
-    position: relative;
-    width:100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    grid-template-columns: 10% 1fr .5fr .5fr 10%;
+    justify-content: center;
+    align-content: center;
+    background-color: #197278;
+    padding-bottom: 20px;
 }
 
-.container2 .row100 .col
+.email .middleline
 {
-    position: relative;
-    width:100%;
-    padding: 0 10px;
-    margin: 30px 0 10px;
-    transition: 0.4s;
+    border-left: 1.6px solid;
+    color: #EDDDD4;
+    height: 100px;
+    grid:3/4;
+    align-content: center;
+    margin-bottom: 15px;
 }
 
-.container2 .row100 .inputBox
+.text
 {
-    position: relative;
-    width: 100%;
-    height: 40px;
-    color:#a00303;
+    color: #EDDDD4;
+    grid-column: 2/ 3;
 }
 
-.container2 .row100 .inputBox input, .container2 .row100 .inputBox.textarea textarea
+.emailme
 {
-    position: absolute;
-    width:100%;
-    height:100%;
-    background: transparent;
-    box-shadow: none;
+    grid-column: 4/5;
+    align-content: center; 
+    justify-content: center;
+   
+}
+
+.emailme button 
+{
+    background-color: #197278;
     border: none;
-    outline: none;
-    font-size: 16px;
-    padding: 0 10px;
-    z-index: 1;
-    color: #000;
-}
-
-.container2 .row100 .inputBox .text
-{
-    position: absolute;
-    top: 0;
-    left:0;
-    line-height: 60px;
-    font-size: 18px;
-    padding:0 10px;
-    display: block;
-    transition: 0.5s;
-    pointer-events: none;
-}
-
-.container2 .row100 .inputBox input:focus + .text,
-.container2 .row100 .inputBox input:valid + .text
-{
-    top: -35px;
-    left: -10px;
-}
-
-.container2 .row100 .inputBox .line
-{
-    position: absolute;
-    bottom:0;
-    display:block;
-    width: 100%;
-    height:2px;
-    background: #a00303;
-    transition: .5s;
-    border-radius: 2px;
-    pointer-events: none;
-}
-
-.container2 .row100 .inputBox input:focus ~ .line,
-.container2 .row100 .inputBox input:valid ~ .line
-{
-    height: 100%;
-}
-
-.container2 .row100 .inputBox.textarea
-{
-    position: relative;
-    width:100%;
-    height:100px;
-    padding: 10px 0;
-}
-
-.container2 .row100 .inputBox.textarea textarea
-{
-    height: 100%;
-    resize: none;
-}
-
-.container2 .row100 .inputBox textarea:focus + .text,
-.container2 .row100 .inputBox textarea:valid + .text
-{
-    top: -35px;
-    left: -10px;
-}
-
-.container2 .row100 .inputBox textarea:focus ~ .line,
-.container2 .row100 .inputBox textarea:valid ~ .line
-{
-    height: 100%;
-}
-
-input[type="submit"]
-{
-    border: none;
-    padding:8px 36px;
+    color:#EDDDD4;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.618fr;
     cursor: pointer;
-    outline: none;
-    background: #a00303;
-    color:#000;
-    font-size: 18px;
-    border-radius:2px;
+    text-transform: uppercase;
+    border: none;
+    outline:none;
 }
+
+[class*="col-"] {
+    width: 100%;
+  }
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
