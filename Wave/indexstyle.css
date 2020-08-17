@@ -269,8 +269,6 @@ nav a
 {
     display: flex;
     justify-content: center; 
-    /* max-width: 1240px;
-    margin: auto; */
     padding-top: 20px;
     padding-bottom: 270px;
 }
@@ -280,17 +278,14 @@ nav a
     list-style: none;
     max-width: 1240px;
     margin: auto;
-    
 }
 
 .projects img
 {
-    max-width: 1240px;
-    margin: auto;
+    width:100%;
     padding: 10px;
     margin-top: 30px;
-    max-width: 1240px;
-    margin: auto;
+
 }
 
 h1
