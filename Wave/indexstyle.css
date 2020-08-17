@@ -175,21 +175,19 @@ nav a
     color:#6e2b22;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    
+    font-weight: 300;  
 }
 
-.btn-secret
+.about a
 {
     display: flex;
     justify-content: center;
     align-content: center;
     margin-top: 35px; 
     font-family: 'Libre Caslon Display', serif;
-
 }
 
-.btn-secret h3
+.about a
 {
     background-color: #197278;
     border: none;
@@ -409,7 +407,7 @@ left:-10%;
 {
     border-left: 1.6px solid;
     color: #EDDDD4;
-    height: 100px;
+    height: 70px;
     grid:3/4;
     align-content: center;
     margin-bottom: 0;
@@ -422,10 +420,12 @@ left:-10%;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1rem;
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
+    align-content: center; 
+    justify-content: center;
 }
 
-.emailme
+.emailme a
 {
     grid-column: 4/5;
     align-content: center; 
@@ -435,7 +435,7 @@ left:-10%;
     
 }
 
-.emailme button 
+.emailme a 
 {
     background-color: #197278;
     border: none;
@@ -443,7 +443,6 @@ left:-10%;
     padding: 40px 20px;
     text-align: center;
     text-decoration: none;
-    font-size: 1.618fr;
     cursor: pointer;
     text-transform: uppercase;
     border: none;
